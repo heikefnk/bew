@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/web.svg" />
       </Head>
       <main className="h-screen bg-white">
-        <div className="border w-4/5 md:w-1/2 lg:w-1/3 mx-auto py-4 px-6 text-sm shadow-lg mt-20 text-center">
+        <div className="border w-4/5 md:w-1/2 lg:w-1/3 mx-auto py-6 px-6 text-[12px] shadow-lg mt-20">
           Sie öffnen gerade eine Internetseite außerhalb Ihres WEB.DE Postfachs.
           Wenn Sie nicht in 3 Sekunden weitergeleitet werden,{" "}
           <Link href="/login" className="text-sky-700">
